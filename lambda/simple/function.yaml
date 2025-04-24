@@ -3,7 +3,7 @@ kind: LambdaFunction
 spec:
   name: SimpleFunction
   role: arn:aws:iam::76xxxxxxx:role/lambda-role
-  image: ecr.ap-northeast-1.amazonaws.com/lambda-test:v0.0.1
+  image: 537765733031.dkr.ecr.us-east-1.amazonaws.com/hiep-test-pipecd:v0
   memory: 512
   timeout: 30
   environments:
