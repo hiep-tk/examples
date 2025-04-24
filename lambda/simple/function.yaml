@@ -2,7 +2,7 @@ apiVersion: pipecd.dev/v1beta1
 kind: LambdaFunction
 spec:
   name: SimpleFunction
-  role: arn:aws:iam::76xxxxxxx:role/lambda-role
+  role: arn:aws:iam::537765733031:role/lambda-ex
   image: 537765733031.dkr.ecr.us-east-1.amazonaws.com/hiep-test-pipecd:v0
   memory: 512
   timeout: 30
