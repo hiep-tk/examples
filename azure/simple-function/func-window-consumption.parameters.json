@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "functionAppName": {
-        "value": "testpipecdcs"
+        "value": "testpipecdcs1"
     },
     "storageAccountType": {
         "value": "Standard_LRS"
