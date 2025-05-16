@@ -9,7 +9,7 @@
         "value": "Standard_LRS"
     },
     "functionWorkerRuntime": {
-        "value": "dotnet-isolated"
+        "value": "dotnet"
     },
     "storageAccountName": {
         "value": "testpipecdsa"
