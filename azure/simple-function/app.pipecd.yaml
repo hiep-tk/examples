@@ -7,7 +7,7 @@ spec:
       kind: function
       functionManifest:
         resourceGroupName: testpipecdrg
-        functionName: testpipecdcs1
+        functionName: testpipecdcs
         armTemplate:
           deploymentName: armdeployfunc
           deploymentTemplateFile: func-window-consumption.json
