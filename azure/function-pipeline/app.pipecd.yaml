@@ -2,6 +2,8 @@ apiVersion: pipecd.dev/v1beta1
 kind: Application
 spec:
   name: test-azure-plugin-pipeline
+  planner:
+    alwaysUsePipeline: true
   pipeline:
     stages:
       - name: AZURE_FUNCTION_SYNC
