@@ -17,7 +17,7 @@ spec:
       kind: function
       functionManifest:
         resourceGroupName: testpipecdrg
-        functionName: testpipecdgo2
+        functionName: testpipecdgo1
         armTemplate:
           deploymentName: armdeployfunc
           deploymentTemplateFile: func-linux-consumption.json
