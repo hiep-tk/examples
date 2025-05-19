@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "functionAppName": {
+        "value": "testpipecdgo1"
+    },
+    "SlotName": {
+        "value": "staging"
+    },
+    "functionWorkerRuntime": {
+        "value": "custom"
+    },
+    "storageAccountType": {
+        "value": "Standard_LRS"
+    },
+    "storageAccountName": {
+        "value": "testpipecdsa"
+    }
+  }
+}

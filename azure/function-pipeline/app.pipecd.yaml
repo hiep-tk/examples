@@ -1,0 +1,23 @@
+apiVersion: pipecd.dev/v1beta1
+kind: Application
+spec:
+  name: test-azure-plugin-pipeline
+  pipeline:
+    stages:
+      - name: AZURE_FUNCTION_SYNC
+        with:
+          slot: staging
+      - name: AZURE_FUNCTION_SWAP
+        with:
+          slot1: staging
+  plugins:
+    azure:
+      kind: function
+      functionManifest:
+        resourceGroupName: testpipecdrg
+        functionName: testpipecdgo1
+        armTemplate:
+          deploymentName: armdeployfunc
+          deploymentTemplateFile: func-linux-consumption.json
+          deploymentParameterFile: func-linux-consumption.parameters.json
+        packageUri: https://testpipecdsa.blob.core.windows.net/testti-deploy/staging-new.zip
